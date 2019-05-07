@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */; };
 		299089B32280C5A40018C2F8 /* SCUIBuildKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */; };
 		299089B82280C5A40018C2F8 /* SCUIBuildKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089B72280C5A40018C2F8 /* SCUIBuildKitTests.swift */; };
 		299089BA2280C5A40018C2F8 /* SCUIBuildKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 299089AC2280C5A40018C2F8 /* SCUIBuildKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		299089CF2280C6B50018C2F8 /* CALayerUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C42280C6B40018C2F8 /* CALayerUsable.swift */; };
 		299089D02280C6B50018C2F8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C52280C6B40018C2F8 /* Builder.swift */; };
-		299089D12280C6B50018C2F8 /* ConstraintUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C62280C6B40018C2F8 /* ConstraintUsable.swift */; };
 		299089D42280C6B50018C2F8 /* ImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */; };
 		299089D52280C6B50018C2F8 /* LabelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CB2280C6B40018C2F8 /* LabelBuilder.swift */; };
 		299089D62280C6B50018C2F8 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */; };
-		299089D72280C6B50018C2F8 /* BackgroundColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CE2280C6B50018C2F8 /* BackgroundColorable.swift */; };
 		299089D92280C7100018C2F8 /* LabelBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */; };
 		299089DC2280C7550018C2F8 /* ImageViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */; };
+		F426E02C5E6CDB7C3C94A290 /* CALayerUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */; };
+		F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */; };
+		F426E51FBB733554E84366C2 /* BackgroundColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */; };
+		F426E69E3C1D43A4E70CC6A5 /* ConstraintUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */; };
+		F426EA859E62D8F5C896D468 /* BackgroundColorableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */; };
+		F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */; };
+		F426EC281A464DA804B7BFCB /* CALayerUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */; };
+		F426EDAF2A9FA527BDEDCBE5 /* ConstraintUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +44,21 @@
 		299089B22280C5A40018C2F8 /* SCUIBuildKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCUIBuildKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299089B72280C5A40018C2F8 /* SCUIBuildKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUIBuildKitTests.swift; sourceTree = "<group>"; };
 		299089B92280C5A40018C2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		299089C42280C6B40018C2F8 /* CALayerUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsable.swift; sourceTree = "<group>"; };
 		299089C52280C6B40018C2F8 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
-		299089C62280C6B40018C2F8 /* ConstraintUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsable.swift; sourceTree = "<group>"; };
 		299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBuilderSpec.swift; sourceTree = "<group>"; };
 		299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBuilder.swift; sourceTree = "<group>"; };
 		299089CB2280C6B40018C2F8 /* LabelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBuilder.swift; sourceTree = "<group>"; };
 		299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
-		299089CE2280C6B50018C2F8 /* BackgroundColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorable.swift; sourceTree = "<group>"; };
 		299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderSpec.swift; sourceTree = "<group>"; };
+		F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsable.swift; sourceTree = "<group>"; };
+		F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableSpec.swift; sourceTree = "<group>"; };
+		F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableMock.swift; sourceTree = "<group>"; };
+		F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableSpec.swift; sourceTree = "<group>"; };
+		F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsableSpec.swift; sourceTree = "<group>"; };
+		F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsable.swift; sourceTree = "<group>"; };
+		F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableMock.swift; sourceTree = "<group>"; };
+		F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorable.swift; sourceTree = "<group>"; };
+		F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsableMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +120,7 @@
 		299089C32280C69E0018C2F8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				299089CE2280C6B50018C2F8 /* BackgroundColorable.swift */,
 				299089C52280C6B40018C2F8 /* Builder.swift */,
-				299089C42280C6B40018C2F8 /* CALayerUsable.swift */,
-				299089C62280C6B40018C2F8 /* ConstraintUsable.swift */,
 				299089CC2280C6B50018C2F8 /* Extensions */,
 				299089C72280C6B40018C2F8 /* Implementation */,
 			);
@@ -121,10 +130,10 @@
 		299089C72280C6B40018C2F8 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
-				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
 				299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */,
+				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
+				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -132,9 +141,26 @@
 		299089CC2280C6B50018C2F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */,
+				F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */,
+				F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */,
+				F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */,
+				F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */,
+				F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */,
 				299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */,
+				F426E1C81B58CDF179650F90 /* Mock */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F426E1C81B58CDF179650F90 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */,
+				F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */,
+				F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,12 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				299089D62280C6B50018C2F8 /* UIImage+UIColor.swift in Sources */,
-				299089CF2280C6B50018C2F8 /* CALayerUsable.swift in Sources */,
-				299089D72280C6B50018C2F8 /* BackgroundColorable.swift in Sources */,
-				299089D12280C6B50018C2F8 /* ConstraintUsable.swift in Sources */,
 				299089D52280C6B50018C2F8 /* LabelBuilder.swift in Sources */,
 				299089D42280C6B50018C2F8 /* ImageViewBuilder.swift in Sources */,
 				299089D02280C6B50018C2F8 /* Builder.swift in Sources */,
+				F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */,
+				F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */,
+				F426E51FBB733554E84366C2 /* BackgroundColorable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +288,13 @@
 			files = (
 				299089D92280C7100018C2F8 /* LabelBuilderSpec.swift in Sources */,
 				299089DC2280C7550018C2F8 /* ImageViewBuilderSpec.swift in Sources */,
+				298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */,
 				299089B82280C5A40018C2F8 /* SCUIBuildKitTests.swift in Sources */,
+				F426EA859E62D8F5C896D468 /* BackgroundColorableMock.swift in Sources */,
+				F426EC281A464DA804B7BFCB /* CALayerUsableMock.swift in Sources */,
+				F426E02C5E6CDB7C3C94A290 /* CALayerUsableSpec.swift in Sources */,
+				F426EDAF2A9FA527BDEDCBE5 /* ConstraintUsableMock.swift in Sources */,
+				F426E69E3C1D43A4E70CC6A5 /* ConstraintUsableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

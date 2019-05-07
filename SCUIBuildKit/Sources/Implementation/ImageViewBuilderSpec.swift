@@ -33,16 +33,6 @@ class ImageViewBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedImage, sut?.image)
   }
 
-  func test_setCornerRadius() {
-    let expectedRadius: CGFloat = 5.0
-
-    sut = ImageViewBuilder()
-      .setCornerRadius(expectedRadius)
-      .build()
-
-    XCTAssertEqual(expectedRadius, sut?.layer.cornerRadius)
-  }
-
   func test_setClipToBounds() {
     let expectedClipToBounds = true
 
@@ -55,18 +45,15 @@ class ImageViewBuilderSpec: XCTestCase {
 
   func test_chaining_build() {
     let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
-    let expectedRadius: CGFloat = 5.0
     let expectedClipToBounds = true
 
     sut = ImageViewBuilder()
       .setImage(expectedImage)
-      .setCornerRadius(expectedRadius)
       .setClipToBounds(expectedClipToBounds)
       .build()
 
     XCTAssertNotNil(sut?.image)
     XCTAssertEqual(expectedImage, sut?.image)
-    XCTAssertEqual(expectedRadius, sut?.layer.cornerRadius)
     XCTAssertEqual(expectedClipToBounds, sut?.clipsToBounds)
 
   }

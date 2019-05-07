@@ -70,29 +70,17 @@ class LabelBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedTextColor, sut?.textColor)
   }
 
-  func test_setBackgroundColor() {
-    let expectedBackgroundColor = UIColor.blue
-
-    sut = LabelBuilder()
-      .setBackgroundColor(expectedBackgroundColor)
-      .build()
-
-    XCTAssertEqual(expectedBackgroundColor, sut?.backgroundColor)
-  }
-
   func test_chaining_build() {
     let expectedText = "test"
     let expectedAlignment: NSTextAlignment = .center
     let expectedFont: UIFont = .systemFont(ofSize: 20)
     let expectedTextColor = UIColor.cyan
-    let expectedBackgroundColor = UIColor.blue
 
     sut = LabelBuilder()
       .setText(expectedText)
       .setTextAlignment(expectedAlignment)
       .setFont(expectedFont)
       .setTextColor(expectedTextColor)
-      .setBackgroundColor(expectedBackgroundColor)
       .build()
 
     XCTAssertNotNil(sut)
@@ -100,7 +88,6 @@ class LabelBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedAlignment, sut?.textAlignment)
     XCTAssertEqual(expectedFont, sut?.font)
     XCTAssertEqual(expectedTextColor, sut?.textColor)
-    XCTAssertEqual(expectedBackgroundColor, sut?.backgroundColor)
   }
 
 }
