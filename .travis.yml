@@ -9,7 +9,7 @@ env:
     - IOS_SDK="iphonesimulator12.2"
     - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=12.2"
     - FRAMEWORK="SCUIBuildKit"
-    - CODE_COV_TOKEN="c826c35f-6230-414e-b819-d8b61a733bba"
+    - CODE_COV_TOKEN="f8383c60-a11f-4ead-a040-45a8d57bae04"
 
 install:
   - swift --version
@@ -17,15 +17,12 @@ install:
 before_script:
   - gem install xcpretty -N
   - gem install xcpretty-travis-formatter
-  - gem install cocoapods
-  - pod repo update
-  - pod update
   - brew install swiftlint
 
 script:
   - set -o pipefail
   - xcodebuild clean build test
-    -prject "$PROJECT"
+    -project "$PROJECT"
     -scheme "$SCHEME"
     -sdk "$IOS_SDK"
     -destination "$DESTINATION"
@@ -34,4 +31,8 @@ script:
     CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -j SCUIBuildKit --cover-xml
+  - bash <(curl -s https://codecov.io/bash) -t f8383c60-a11f-4ead-a040-45a8d57bae04 --cover-xml
+
+notifications:
+  slack: interactord:Z4o1u31lio6owH5ic2qWuSGo
+  on_success: always
