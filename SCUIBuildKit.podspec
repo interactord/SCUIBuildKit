@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
       'SWIFT_VERSION' => '5.0'
     }
     s.source       = { :git => "https://github.com/interactord/SCBuildKit.git", :tag => s.version.to_s }
-    s.source_files  = "SCServiceKit/**/*.swift"
+    s.source_files  = "SCUIBuildKit/**/*.swift"
     s.frameworks  = 'UIKit', 'Foundation'
     s.requires_arc     = true  
   
