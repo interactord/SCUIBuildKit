@@ -15,4 +15,13 @@ extension UIImage {
     UIGraphicsEndImageContext()
     return image
   }
+
+  func mergedAlpha(_ value: CGFloat) -> UIImage? {
+    UIGraphicsBeginImageContextWithOptions(size, false, scale)
+    draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+    let image: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+
+    return image
+  }
 }

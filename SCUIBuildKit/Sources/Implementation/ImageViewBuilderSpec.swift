@@ -43,6 +43,18 @@ class ImageViewBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedClipToBounds, sut?.clipsToBounds)
   }
 
+  func test_extension_mergedAlpha() {
+    var expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
+    expectedImage = expectedImage?.mergedAlpha(0.3)
+
+    sut = ImageViewBuilder()
+      .setImage(expectedImage)
+      .build()
+
+    XCTAssertNotNil(sut?.image)
+    XCTAssertEqual(expectedImage, sut?.image)
+  }
+
   func test_chaining_build() {
     let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
     let expectedClipToBounds = true
