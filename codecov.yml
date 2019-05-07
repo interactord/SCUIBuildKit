@@ -8,8 +8,6 @@ coverage:
   ignore:
   - .*Tests.swift
   - .*Spec.swift
-  - .Stub*.swift
-  - .*Mock.swift
   
   status:
     patch: false

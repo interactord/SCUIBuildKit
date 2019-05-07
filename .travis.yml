@@ -4,7 +4,7 @@ sudo: required
 
 env:
   global:
-    - PROJECT="SCUIBuildKit.xcodeproj"
+    - PROJECT="SCUIBuildKit.xcworkspace"
     - SCHEME="SCUIBuildKit"
     - IOS_SDK="iphonesimulator12.2"
     - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=12.2"
@@ -22,13 +22,13 @@ before_script:
 script:
   - set -o pipefail
   - xcodebuild clean build test
-    -project "$PROJECT"
+    -workspace "$PROJECT"
     -scheme "$SCHEME"
     -sdk "$IOS_SDK"
     -destination "$DESTINATION"
     -configuration Debug
     -enableCodeCoverage YES
-    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t f8383c60-a11f-4ead-a040-45a8d57bae04 --cover-xml
