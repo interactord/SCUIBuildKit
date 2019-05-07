@@ -10,7 +10,6 @@
 		298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */; };
 		2984703822822A900021FDD5 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */; };
 		299089B32280C5A40018C2F8 /* SCUIBuildKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */; };
-		299089B82280C5A40018C2F8 /* SCUIBuildKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089B72280C5A40018C2F8 /* SCUIBuildKitTests.swift */; };
 		299089BA2280C5A40018C2F8 /* SCUIBuildKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 299089AC2280C5A40018C2F8 /* SCUIBuildKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		299089D02280C6B50018C2F8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C52280C6B40018C2F8 /* Builder.swift */; };
 		299089D42280C6B50018C2F8 /* ImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */; };
@@ -46,7 +45,6 @@
 		299089AC2280C5A40018C2F8 /* SCUIBuildKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUIBuildKit.h; sourceTree = "<group>"; };
 		299089AD2280C5A40018C2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		299089B22280C5A40018C2F8 /* SCUIBuildKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCUIBuildKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		299089B72280C5A40018C2F8 /* SCUIBuildKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCUIBuildKitTests.swift; sourceTree = "<group>"; };
 		299089B92280C5A40018C2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		299089C52280C6B40018C2F8 /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBuilderSpec.swift; sourceTree = "<group>"; };
@@ -88,6 +86,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		294961F32282382200B9C95D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F426E1C81B58CDF179650F90 /* Mock */,
+				F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */,
+				F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */,
+				F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		294961F42282383A00B9C95D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
+				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
+				F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */,
+				F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 		2990899F2280C5A40018C2F8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +139,8 @@
 		299089B62280C5A40018C2F8 /* SCUIBuildKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				299089B72280C5A40018C2F8 /* SCUIBuildKitTests.swift */,
+				294961F42282383A00B9C95D /* Implementation */,
+				294961F32282382200B9C95D /* Extensions */,
 				299089B92280C5A40018C2F8 /* Info.plist */,
 			);
 			path = SCUIBuildKitTests;
@@ -139,13 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */,
-				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
-				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
 				F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */,
-				F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */,
 				F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */,
-				F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -154,13 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */,
-				F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */,
 				F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */,
-				F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */,
 				F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */,
-				F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */,
 				299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */,
-				F426E1C81B58CDF179650F90 /* Mock */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,7 +316,6 @@
 				299089D92280C7100018C2F8 /* LabelBuilderSpec.swift in Sources */,
 				299089DC2280C7550018C2F8 /* ImageViewBuilderSpec.swift in Sources */,
 				298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */,
-				299089B82280C5A40018C2F8 /* SCUIBuildKitTests.swift in Sources */,
 				F426EA859E62D8F5C896D468 /* BackgroundColorableMock.swift in Sources */,
 				F426EC281A464DA804B7BFCB /* CALayerUsableMock.swift in Sources */,
 				F426E02C5E6CDB7C3C94A290 /* CALayerUsableSpec.swift in Sources */,
