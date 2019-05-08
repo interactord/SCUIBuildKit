@@ -16,12 +16,14 @@ public protocol ConstraintUsable: Builder {
 public extension ConstraintUsable {
   func setWidthAnchor(_ width: CGFloat) -> Self {
     let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.widthAnchor.constraint(equalToConstant: width).isActive = true
     return self
   }
 
   func setHeightAnchor(_ height: CGFloat) -> Self {
     let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.heightAnchor.constraint(equalToConstant: height).isActive = true
     return self
   }
