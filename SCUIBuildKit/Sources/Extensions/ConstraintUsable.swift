@@ -13,7 +13,7 @@ public protocol ConstraintUsable: Builder {
   func setHeightAnchor(_ height: CGFloat) -> Self
 }
 
-extension ConstraintUsable {
+public extension ConstraintUsable {
   func setWidthAnchor(_ width: CGFloat) -> Self {
     let targetView = isUIViewType(self.targetView)
     targetView.widthAnchor.constraint(equalToConstant: width).isActive = true
