@@ -10,24 +10,44 @@ import UIKit
 
 class CALayerUsableSpec: XCTestCase {
 
-	var sut: UIView?
+  var sut: UIView?
 
-	override func setUp() {
-		super.setUp()
-	}
+  override func setUp() {
+    super.setUp()
+  }
 
-	override func tearDown() {
-		super.tearDown()
-		sut = nil
-	}
+  override func tearDown() {
+    super.tearDown()
+    sut = nil
+  }
 
-	func test_setCornerRadius() {
-		let expectedRadius: CGFloat = 16.0
+  func test_setCornerRadius() {
+    let expectedRadius: CGFloat = 16.0
 
-		sut = CALayerUsableMock()
-			.setCornerRadius(expectedRadius)
-			.build()
+    sut = CALayerUsableMock()
+      .setCornerRadius(expectedRadius)
+      .build()
 
-		XCTAssertEqual(expectedRadius, sut?.layer.cornerRadius)
-	}
+    XCTAssertEqual(expectedRadius, sut?.layer.cornerRadius)
+  }
+
+  func test_setBorderWidth() {
+    let expectedBorderWidth: CGFloat = 3.0
+
+    sut = CALayerUsableMock()
+      .setBorderWidth(expectedBorderWidth)
+      .build()
+
+    XCTAssertEqual(expectedBorderWidth, sut?.layer.borderWidth)
+  }
+
+  func test_setBorderColor() {
+    let expectedBorderColor: CGColor = UIColor.red.cgColor
+
+    sut = CALayerUsableMock()
+      .setBorderColor(expectedBorderColor)
+      .build()
+
+    XCTAssertEqual(expectedBorderColor, sut?.layer.borderColor)
+  }
 }
