@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct ImageViewBuilder: Builder, CALayerUsable {
+public struct ImageViewBuilder: Builder, CALayerUsable, BackgroundColorable, ConstraintUsable {
   public private(set) var targetView: UIImageView
 
   public init() {
