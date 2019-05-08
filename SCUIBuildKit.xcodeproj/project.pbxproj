@@ -100,9 +100,9 @@
 		294961F42282383A00B9C95D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */,
 				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
 				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
-				F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */,
 				F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */,
 			);
 			path = Implementation;

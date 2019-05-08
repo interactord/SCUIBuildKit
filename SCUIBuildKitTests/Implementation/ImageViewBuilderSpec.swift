@@ -55,18 +55,31 @@ class ImageViewBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedImage, sut?.image)
   }
 
+  func test_setContentMode() {
+    let exptectedContentMode: UIImageView.ContentMode = .scaleAspectFill
+
+    sut = ImageViewBuilder()
+      .setContentMode(exptectedContentMode)
+      .build()
+
+    XCTAssertEqual(exptectedContentMode, sut?.contentMode)
+  }
+
   func test_chaining_build() {
     let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
     let expectedClipToBounds = true
+    let exptectedContentMode: UIImageView.ContentMode = .scaleAspectFill
 
     sut = ImageViewBuilder()
       .setImage(expectedImage)
       .setClipToBounds(expectedClipToBounds)
+      .setContentMode(exptectedContentMode)
       .build()
 
     XCTAssertNotNil(sut?.image)
     XCTAssertEqual(expectedImage, sut?.image)
     XCTAssertEqual(expectedClipToBounds, sut?.clipsToBounds)
+    XCTAssertEqual(exptectedContentMode, sut?.contentMode)
 
   }
 }

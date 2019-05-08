@@ -21,4 +21,9 @@ public struct ImageViewBuilder: Builder, CALayerUsable, BackgroundColorable, Con
     targetView.clipsToBounds = clipToBounds
     return self
   }
+
+  public func setContentMode(_ mode: UIView.ContentMode) -> ImageViewBuilder {
+    targetView.contentMode = mode
+    return self
+  }
 }
