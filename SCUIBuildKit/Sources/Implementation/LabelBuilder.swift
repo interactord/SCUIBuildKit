@@ -31,4 +31,9 @@ public struct LabelBuilder: Builder, BackgroundColorable, CALayerUsable, Constra
     targetView.textColor = color
     return self
   }
+
+  public func setNumberOfLines(_ line: Int) -> LabelBuilder {
+    targetView.numberOfLines = line
+    return self
+  }
 }

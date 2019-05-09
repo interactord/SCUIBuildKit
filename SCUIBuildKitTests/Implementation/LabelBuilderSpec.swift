@@ -70,17 +70,29 @@ class LabelBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedTextColor, sut?.textColor)
   }
 
+  func test_setNumberOfLines() {
+    let expectedNumberOfLines = 3
+
+    sut = LabelBuilder()
+      .setNumberOfLines(expectedNumberOfLines)
+      .build()
+
+    XCTAssertEqual(expectedNumberOfLines, sut?.numberOfLines)
+  }
+
   func test_chaining_build() {
     let expectedText = "test"
     let expectedAlignment: NSTextAlignment = .center
     let expectedFont: UIFont = .systemFont(ofSize: 20)
     let expectedTextColor = UIColor.cyan
+    let expectedNumberOfLines = 3
 
     sut = LabelBuilder()
       .setText(expectedText)
       .setTextAlignment(expectedAlignment)
       .setFont(expectedFont)
       .setTextColor(expectedTextColor)
+      .setNumberOfLines(expectedNumberOfLines)
       .build()
 
     XCTAssertNotNil(sut)
@@ -88,6 +100,7 @@ class LabelBuilderSpec: XCTestCase {
     XCTAssertEqual(expectedAlignment, sut?.textAlignment)
     XCTAssertEqual(expectedFont, sut?.font)
     XCTAssertEqual(expectedTextColor, sut?.textColor)
+    XCTAssertEqual(expectedNumberOfLines, sut?.numberOfLines)
   }
 
 }
