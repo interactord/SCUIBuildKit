@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */; };
 		298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */; };
 		2984703822822A900021FDD5 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */; };
 		299089B32280C5A40018C2F8 /* SCUIBuildKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */; };
@@ -21,11 +22,12 @@
 		F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */; };
 		F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */; };
 		F426E29B869969495BE22278 /* ButtonBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */; };
-		F426E51FBB733554E84366C2 /* BackgroundColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */; };
 		F426E5507C902FC61D45A30B /* StackViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */; };
+		F426E5781B33DEFC6C88ACCE /* ActivityIndicatorViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */; };
 		F426E69E3C1D43A4E70CC6A5 /* ConstraintUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */; };
 		F426EA859E62D8F5C896D468 /* BackgroundColorableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */; };
 		F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */; };
+		F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E783759536F406FE5B34 /* BackgroundColorable.swift */; };
 		F426EC281A464DA804B7BFCB /* CALayerUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */; };
 		F426EDAF2A9FA527BDEDCBE5 /* ConstraintUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorBuilder.swift; sourceTree = "<group>"; };
 		299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUIBuildKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		299089AC2280C5A40018C2F8 /* SCUIBuildKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUIBuildKit.h; sourceTree = "<group>"; };
 		299089AD2280C5A40018C2F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +57,15 @@
 		299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderSpec.swift; sourceTree = "<group>"; };
 		F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsable.swift; sourceTree = "<group>"; };
 		F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableSpec.swift; sourceTree = "<group>"; };
+		F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewBuilderSpec.swift; sourceTree = "<group>"; };
 		F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableMock.swift; sourceTree = "<group>"; };
 		F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableSpec.swift; sourceTree = "<group>"; };
 		F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsableSpec.swift; sourceTree = "<group>"; };
 		F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsable.swift; sourceTree = "<group>"; };
+		F426E783759536F406FE5B34 /* BackgroundColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorable.swift; sourceTree = "<group>"; };
 		F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewBuilderSpec.swift; sourceTree = "<group>"; };
 		F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableMock.swift; sourceTree = "<group>"; };
 		F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBuilder.swift; sourceTree = "<group>"; };
-		F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorable.swift; sourceTree = "<group>"; };
 		F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBuilderSpec.swift; sourceTree = "<group>"; };
 		F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsableMock.swift; sourceTree = "<group>"; };
 		F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewBuilder.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */,
 				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
 				F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */,
+				F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -159,9 +164,10 @@
 		299089C72280C6B40018C2F8 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */,
+				F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */,
 				299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */,
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
-				F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */,
 				F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */,
 			);
 			path = Implementation;
@@ -170,10 +176,10 @@
 		299089CC2280C6B50018C2F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F426EC3FE48DC7E7B1393225 /* BackgroundColorable.swift */,
 				F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */,
 				F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */,
 				299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */,
+				F426E783759536F406FE5B34 /* BackgroundColorable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,11 +307,12 @@
 				299089D52280C6B50018C2F8 /* LabelBuilder.swift in Sources */,
 				2984703822822A900021FDD5 /* StackViewBuilder.swift in Sources */,
 				299089D42280C6B50018C2F8 /* ImageViewBuilder.swift in Sources */,
+				294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */,
 				299089D02280C6B50018C2F8 /* Builder.swift in Sources */,
 				F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */,
 				F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */,
-				F426E51FBB733554E84366C2 /* BackgroundColorable.swift in Sources */,
 				F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */,
+				F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +330,7 @@
 				F426E69E3C1D43A4E70CC6A5 /* ConstraintUsableSpec.swift in Sources */,
 				F426E29B869969495BE22278 /* ButtonBuilderSpec.swift in Sources */,
 				F426E5507C902FC61D45A30B /* StackViewBuilderSpec.swift in Sources */,
+				F426E5781B33DEFC6C88ACCE /* ActivityIndicatorViewBuilderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
