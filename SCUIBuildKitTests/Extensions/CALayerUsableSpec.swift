@@ -50,4 +50,55 @@ class CALayerUsableSpec: XCTestCase {
 
     XCTAssertEqual(expectedBorderColor, sut?.layer.borderColor)
   }
+
+  func test_setShadowOffset() {
+    let expectedOffset = CGSize(width: 1, height: 1)
+
+    sut = CALayerUsableMock()
+      .setShadowOffset(expectedOffset)
+      .build()
+
+    XCTAssertEqual(expectedOffset, sut?.layer.shadowOffset)
+  }
+
+  func test_setShadowColor() {
+    let expectedColor = UIColor.red.cgColor
+
+    sut = CALayerUsableMock()
+      .setShadowColor(expectedColor)
+      .build()
+
+    XCTAssertEqual(expectedColor, sut?.layer.shadowColor)
+  }
+
+  func test_setShadowOpacity() {
+    let expectedOpacity: Float = 0.5
+
+    sut = CALayerUsableMock()
+      .setShadowOpacity(expectedOpacity)
+      .build()
+
+    XCTAssertEqual(expectedOpacity, sut?.layer.shadowOpacity)
+  }
+
+  func test_setShadowRadius() {
+    let expectedRadius: CGFloat = 1.2
+
+    sut = CALayerUsableMock()
+      .setShadowRadius(expectedRadius)
+      .build()
+
+    XCTAssertEqual(expectedRadius, sut?.layer.shadowRadius)
+  }
+
+  func test_setShouldRasterize() {
+    let expectedRasterize = true
+
+    sut = CALayerUsableMock()
+      .setShouldRasterize(expectedRasterize)
+      .build()
+
+    XCTAssertEqual(expectedRasterize, sut?.layer.shouldRasterize)
+  }
+
 }
