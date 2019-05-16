@@ -5,7 +5,7 @@
 
 import UIKit
 
-class ViewBuilder: Builder, CALayerUsable, ConstraintUsable, BackgroundColorable, ViewUsable {
+public class ViewBuilder: Builder, CALayerUsable, ConstraintUsable, BackgroundColorable, ViewUsable {
 	public private(set) var targetView: UIView
 
 	public init() {
