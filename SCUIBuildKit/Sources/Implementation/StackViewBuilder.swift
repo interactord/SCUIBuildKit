@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct StackViewBuilder: Builder, ConstraintUsable {
+public struct StackViewBuilder: Builder, ConstraintUsable, ViewUsable {
 	public private(set) var targetView: UIStackView
 
 	public init(arrangedSubViews: [UIView]) {

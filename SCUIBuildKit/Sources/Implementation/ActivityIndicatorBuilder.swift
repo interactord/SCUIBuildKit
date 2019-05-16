@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct ActivityIndicatorViewBuilder: Builder {
+public struct ActivityIndicatorViewBuilder: Builder, ViewUsable {
 
 	public var targetView: UIActivityIndicatorView
 

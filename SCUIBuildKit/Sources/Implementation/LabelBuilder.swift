@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct LabelBuilder: Builder, BackgroundColorable, CALayerUsable, ConstraintUsable {
+public struct LabelBuilder: Builder, BackgroundColorable, CALayerUsable, ConstraintUsable, ViewUsable {
   public var targetView: UILabel
 
   public init() {

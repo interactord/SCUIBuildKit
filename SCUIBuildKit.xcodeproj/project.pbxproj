@@ -20,16 +20,21 @@
 		299089DC2280C7550018C2F8 /* ImageViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */; };
 		F426E02C5E6CDB7C3C94A290 /* CALayerUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */; };
 		F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */; };
+		F426E09898C6B7D700BDBB20 /* ViewUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E2F84FCD90B72BFD586A /* ViewUsableMock.swift */; };
 		F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */; };
 		F426E29B869969495BE22278 /* ButtonBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426ECFC15AE925A80A80FF3 /* ButtonBuilderSpec.swift */; };
 		F426E5507C902FC61D45A30B /* StackViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */; };
 		F426E5781B33DEFC6C88ACCE /* ActivityIndicatorViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */; };
+		F426E588A863E342A3462D88 /* ViewUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E8693C782BED980369BC /* ViewUsableSpec.swift */; };
 		F426E69E3C1D43A4E70CC6A5 /* ConstraintUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */; };
+		F426E9990FBB0406BA9955AB /* ViewUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E3C295CE631AAA40FE76 /* ViewUsable.swift */; };
+		F426EA4481B8714B46AC839C /* ViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E9076D5FAD244D72AE3F /* ViewBuilderSpec.swift */; };
 		F426EA859E62D8F5C896D468 /* BackgroundColorableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */; };
 		F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */; };
 		F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E783759536F406FE5B34 /* BackgroundColorable.swift */; };
 		F426EC281A464DA804B7BFCB /* CALayerUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */; };
 		F426EDAF2A9FA527BDEDCBE5 /* ConstraintUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */; };
+		F426EF071E435B84940904EA /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E8C262498E6A158788C4 /* ViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +63,16 @@
 		F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsable.swift; sourceTree = "<group>"; };
 		F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableSpec.swift; sourceTree = "<group>"; };
 		F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewBuilderSpec.swift; sourceTree = "<group>"; };
+		F426E2F84FCD90B72BFD586A /* ViewUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUsableMock.swift; sourceTree = "<group>"; };
 		F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableMock.swift; sourceTree = "<group>"; };
+		F426E3C295CE631AAA40FE76 /* ViewUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUsable.swift; sourceTree = "<group>"; };
 		F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableSpec.swift; sourceTree = "<group>"; };
 		F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsableSpec.swift; sourceTree = "<group>"; };
 		F426E637CFCCDB0F2A85ED58 /* CALayerUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerUsable.swift; sourceTree = "<group>"; };
 		F426E783759536F406FE5B34 /* BackgroundColorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorable.swift; sourceTree = "<group>"; };
+		F426E8693C782BED980369BC /* ViewUsableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUsableSpec.swift; sourceTree = "<group>"; };
+		F426E8C262498E6A158788C4 /* ViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		F426E9076D5FAD244D72AE3F /* ViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilderSpec.swift; sourceTree = "<group>"; };
 		F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewBuilderSpec.swift; sourceTree = "<group>"; };
 		F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsableMock.swift; sourceTree = "<group>"; };
 		F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonBuilder.swift; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 				F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */,
 				F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */,
 				F426E44073636961C2D21ACA /* ConstraintUsableSpec.swift */,
+				F426E8693C782BED980369BC /* ViewUsableSpec.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 				299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */,
 				F426E97B735651AF6005F708 /* StackViewBuilderSpec.swift */,
 				F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */,
+				F426E9076D5FAD244D72AE3F /* ViewBuilderSpec.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -169,6 +181,7 @@
 				299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */,
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
 				F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */,
+				F426E8C262498E6A158788C4 /* ViewBuilder.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 				F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */,
 				299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */,
 				F426E783759536F406FE5B34 /* BackgroundColorable.swift */,
+				F426E3C295CE631AAA40FE76 /* ViewUsable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +204,7 @@
 				F426E2F8EF43A8255A95BB85 /* BackgroundColorableMock.swift */,
 				F426EEB4C42088AB2AF6CE90 /* CALayerUsableMock.swift */,
 				F426EA029204CE15655A98E5 /* ConstraintUsableMock.swift */,
+				F426E2F84FCD90B72BFD586A /* ViewUsableMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -313,6 +328,8 @@
 				F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */,
 				F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */,
 				F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */,
+				F426EF071E435B84940904EA /* ViewBuilder.swift in Sources */,
+				F426E9990FBB0406BA9955AB /* ViewUsable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +348,9 @@
 				F426E29B869969495BE22278 /* ButtonBuilderSpec.swift in Sources */,
 				F426E5507C902FC61D45A30B /* StackViewBuilderSpec.swift in Sources */,
 				F426E5781B33DEFC6C88ACCE /* ActivityIndicatorViewBuilderSpec.swift in Sources */,
+				F426EA4481B8714B46AC839C /* ViewBuilderSpec.swift in Sources */,
+				F426E09898C6B7D700BDBB20 /* ViewUsableMock.swift in Sources */,
+				F426E588A863E342A3462D88 /* ViewUsableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

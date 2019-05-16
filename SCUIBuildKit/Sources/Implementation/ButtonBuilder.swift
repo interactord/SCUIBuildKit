@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, ConstraintUsable {
+public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, ConstraintUsable, ViewUsable {
   public var targetView: UIButton
 
 	public init(type: UIButton.ButtonType? = nil) {
