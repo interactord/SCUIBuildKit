@@ -47,4 +47,20 @@ class ButtonBuilderSpec: XCTestCase {
 			.setTitleColor(expectedColor)
 			.build()
 	}
+
+	func test_setImage() {
+		let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
+
+		sut = ButtonBuilder()
+			.setImage(expectedImage)
+			.build()
+	}
+
+	func test_setBackgroundImage() {
+		let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
+
+		sut = ButtonBuilder()
+			.setBackgroundImage(expectedImage)
+			.build()
+	}
 }

@@ -12,10 +12,20 @@ public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, Constr
     targetView = UIButton(type: type ?? .system)
 	}
 
-  public func setTitle(_ title: String, state: UIControl.State? = nil) -> ButtonBuilder {
-		targetView.setTitle(title, for: state ?? .normal)
+  public func setTitle(_ title: String, state: UIControl.State = .normal) -> ButtonBuilder {
+		targetView.setTitle(title, for: state)
 		return self
   }
+
+	public func setImage(_ image: UIImage?, state: UIControl.State = .normal) -> ButtonBuilder {
+		targetView.setImage(image, for: state)
+		return self
+	}
+
+	public func setBackgroundImage(_ image: UIImage?, state: UIControl.State = .normal) -> ButtonBuilder {
+		targetView.setBackgroundImage(image, for: state)
+		return self
+	}
 
   public func setFont(_ font: UIFont) -> ButtonBuilder {
     targetView.titleLabel?.font = font
