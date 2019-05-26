@@ -9,58 +9,68 @@ import UIKit
 @testable import SCUIBuildKit
 
 class ButtonBuilderSpec: XCTestCase {
-	var sut: UIButton?
+  var sut: UIButton?
 
-	override func setUp() {
-		super.setUp()
-	}
+  override func setUp() {
+    super.setUp()
+  }
 
-	override func tearDown() {
-		super.tearDown()
-		sut = nil
-	}
+  override func tearDown() {
+    super.tearDown()
+    sut = nil
+  }
 
-	func test_setTitle() {
-		let expectedTitle = "Test"
+  func test_setTitle() {
+    let expectedTitle = "Test"
 
-		sut = ButtonBuilder()
-			.setTitle("Test")
-			.build()
+    sut = ButtonBuilder()
+      .setTitle("Test")
+      .build()
 
-		XCTAssertEqual(expectedTitle, sut?.titleLabel?.text)
-	}
+    XCTAssertEqual(expectedTitle, sut?.titleLabel?.text)
+  }
 
-	func test_setFont() {
+  func test_setFont() {
 
-		let expectedFont = UIFont.systemFont(ofSize: 20)
-		sut = ButtonBuilder()
-			.setFont(expectedFont)
-			.build()
+    let expectedFont = UIFont.systemFont(ofSize: 20)
+    sut = ButtonBuilder()
+      .setFont(expectedFont)
+      .build()
 
-		XCTAssertEqual(expectedFont, sut?.titleLabel?.font)
-	}
+    XCTAssertEqual(expectedFont, sut?.titleLabel?.font)
+  }
 
-	func test_setTitleColor() {
-		let expectedColor = UIColor.red
+  func test_setTitleColor() {
+    let expectedColor = UIColor.red
 
-		sut = ButtonBuilder()
-			.setTitleColor(expectedColor)
-			.build()
-	}
+    sut = ButtonBuilder()
+      .setTitleColor(expectedColor)
+      .build()
+  }
 
-	func test_setImage() {
-		let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
+  func test_setImage() {
+    let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
 
-		sut = ButtonBuilder()
-			.setImage(expectedImage)
-			.build()
-	}
+    sut = ButtonBuilder()
+      .setImage(expectedImage)
+      .build()
+  }
 
-	func test_setBackgroundImage() {
-		let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
+  func test_setBackgroundImage() {
+    let expectedImage = UIImage().fillColor(.red, bounce: .init(origin: .zero, size: .init(width: 40, height: 40)))
 
-		sut = ButtonBuilder()
-			.setBackgroundImage(expectedImage)
-			.build()
-	}
+    sut = ButtonBuilder()
+      .setBackgroundImage(expectedImage)
+      .build()
+  }
+
+  func test_setTag() {
+    let exptectedTag: Int = 1_000
+
+    sut = ButtonBuilder()
+      .setTag(exptectedTag)
+      .build()
+
+    XCTAssertEqual(exptectedTag, sut?.tag)
+  }
 }

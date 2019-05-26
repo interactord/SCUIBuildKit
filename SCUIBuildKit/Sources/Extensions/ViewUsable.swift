@@ -6,14 +6,20 @@
 import UIKit
 
 public protocol ViewUsable: Builder {
-	func setAlpha(_ opacity: CGFloat) -> Self
+  func setAlpha(_ opacity: CGFloat) -> Self
 }
 
 extension ViewUsable {
 
-	public func setAlpha(_ alpha: CGFloat) -> Self {
-		let targetView = isUIViewType(self.targetView)
-		targetView.alpha = alpha
-		return  self
-	}
+  public func setAlpha(_ alpha: CGFloat) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.alpha = alpha
+    return self
+  }
+
+  public func setTag(_ tag: Int) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.tag = tag
+    return self
+  }
 }
