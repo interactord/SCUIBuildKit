@@ -7,6 +7,7 @@ import UIKit
 
 public protocol ViewUsable: Builder {
   func setAlpha(_ opacity: CGFloat) -> Self
+  func setTag(_ tag: Int) -> Self
 }
 
 extension ViewUsable {

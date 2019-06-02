@@ -73,4 +73,14 @@ class ButtonBuilderSpec: XCTestCase {
 
     XCTAssertEqual(exptectedTag, sut?.tag)
   }
+
+  func test_setContentEdgeInsets() {
+    let expectedEdge: UIEdgeInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+
+    sut = ButtonBuilder()
+      .setContentEdgeInsets(expectedEdge)
+      .build()
+
+    XCTAssertEqual(expectedEdge, sut?.contentEdgeInsets)
+  }
 }
