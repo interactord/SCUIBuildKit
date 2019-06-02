@@ -42,4 +42,11 @@ public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, Constr
     return self
   }
 
+  public func setWidthAnchorSizeToFit() -> ButtonBuilder {
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.sizeToFit()
+    targetView.widthAnchor.constraint(equalToConstant: targetView.frame.width).isActive = true
+    return self
+  }
+
 }

@@ -83,4 +83,15 @@ class ButtonBuilderSpec: XCTestCase {
 
     XCTAssertEqual(expectedEdge, sut?.contentEdgeInsets)
   }
+
+  func test_setWidthAnchorSizeToFit() {
+    let edge: UIEdgeInsets = .init(top: 10, left: 10, bottom: 10, right: 10)
+
+    sut = ButtonBuilder()
+      .setContentEdgeInsets(edge)
+      .setWidthAnchorSizeToFit()
+      .build()
+
+    XCTAssertEqual(edge.left + edge.right, sut?.frame.width)
+  }
 }
