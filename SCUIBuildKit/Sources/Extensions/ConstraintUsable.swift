@@ -22,14 +22,14 @@ public extension ConstraintUsable {
   }
 
   func setGreatThenWidthAnchor(_ width: CGFloat) -> Self {
-      let targetView = isUIViewType(self.targetView)
+    let targetView = isUIViewType(self.targetView)
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.widthAnchor.constraint(greaterThanOrEqualToConstant: width).isActive = true
     return self
   }
 
   func setLessThenOrWidthAnchor(_ width: CGFloat) -> Self {
-      let targetView = isUIViewType(self.targetView)
+    let targetView = isUIViewType(self.targetView)
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.widthAnchor.constraint(lessThanOrEqualToConstant: width).isActive = true
     return self
@@ -43,14 +43,14 @@ public extension ConstraintUsable {
   }
 
   func setGreatThenHeightAnchor(_ height: CGFloat) -> Self {
-      let targetView = isUIViewType(self.targetView)
+    let targetView = isUIViewType(self.targetView)
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.heightAnchor.constraint(greaterThanOrEqualToConstant: height).isActive = true
     return self
   }
 
   func setLessThenOrHeight(_ height: CGFloat) -> Self {
-      let targetView = isUIViewType(self.targetView)
+    let targetView = isUIViewType(self.targetView)
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.heightAnchor.constraint(lessThanOrEqualToConstant: height).isActive = true
     return self
@@ -70,6 +70,13 @@ public extension ConstraintUsable {
         constant: 0
       )
     )
+    return self
+  }
+
+  func setContentHuggingPriority(priority: UILayoutPriority, axis: NSLayoutConstraint.Axis) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.setContentHuggingPriority(priority, for: axis)
     return self
   }
 }
