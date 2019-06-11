@@ -49,4 +49,9 @@ public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, Constr
     return self
   }
 
+  public func setAddTarget(_ target: Any?, selector: Selector, event: UIControl.Event) -> ButtonBuilder {
+    targetView.addTarget(target, action: selector, for: event)
+    return self
+  }
+
 }
