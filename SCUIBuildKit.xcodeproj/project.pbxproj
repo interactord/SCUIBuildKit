@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2947139822AFF18300ACE8A4 /* SliderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947139722AFF18300ACE8A4 /* SliderBuilder.swift */; };
 		294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */; };
 		298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */; };
 		2984703822822A900021FDD5 /* StackViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2947139722AFF18300ACE8A4 /* SliderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBuilder.swift; sourceTree = "<group>"; };
 		294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorBuilder.swift; sourceTree = "<group>"; };
 		299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUIBuildKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		299089AC2280C5A40018C2F8 /* SCUIBuildKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUIBuildKit.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
 				F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */,
 				F426E8C262498E6A158788C4 /* ViewBuilder.swift */,
+				2947139722AFF18300ACE8A4 /* SliderBuilder.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */,
 				F426EF071E435B84940904EA /* ViewBuilder.swift in Sources */,
 				F426E9990FBB0406BA9955AB /* ViewUsable.swift in Sources */,
+				2947139822AFF18300ACE8A4 /* SliderBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

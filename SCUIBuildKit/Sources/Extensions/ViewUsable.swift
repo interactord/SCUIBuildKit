@@ -8,6 +8,7 @@ import UIKit
 public protocol ViewUsable: Builder {
   func setAlpha(_ opacity: CGFloat) -> Self
   func setTag(_ tag: Int) -> Self
+  func setTintColor(_ tintColor: UIColor) -> Self
 }
 
 extension ViewUsable {
@@ -21,6 +22,12 @@ extension ViewUsable {
   public func setTag(_ tag: Int) -> Self {
     let targetView = isUIViewType(self.targetView)
     targetView.tag = tag
+    return self
+  }
+
+  public func setTintColor(_ tintColor: UIColor) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.tintColor = tintColor
     return self
   }
 }
