@@ -28,4 +28,20 @@ public extension ConstraintUsable {
     return self
   }
 
+  func setRatio(width: CGFloat, height: CGFloat) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.addConstraint(
+      NSLayoutConstraint(
+        item: targetView,
+        attribute: .height,
+        relatedBy: .equal,
+        toItem: targetView,
+        attribute: .width,
+        multiplier: height / width,
+        constant: 0
+      )
+    )
+    return self
+  }
 }
