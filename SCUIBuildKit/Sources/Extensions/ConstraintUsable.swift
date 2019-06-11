@@ -21,10 +21,38 @@ public extension ConstraintUsable {
     return self
   }
 
+  func setGreatThenWidthAnchor(_ width: CGFloat) -> Self {
+      let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.widthAnchor.constraint(greaterThanOrEqualToConstant: width).isActive = true
+    return self
+  }
+
+  func setLessThenOrWidthAnchor(_ width: CGFloat) -> Self {
+      let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.widthAnchor.constraint(lessThanOrEqualToConstant: width).isActive = true
+    return self
+  }
+
   func setHeightAnchor(_ height: CGFloat) -> Self {
     let targetView = isUIViewType(self.targetView)
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.heightAnchor.constraint(equalToConstant: height).isActive = true
+    return self
+  }
+
+  func setGreatThenHeightAnchor(_ height: CGFloat) -> Self {
+      let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.heightAnchor.constraint(greaterThanOrEqualToConstant: height).isActive = true
+    return self
+  }
+
+  func setLessThenOrHeight(_ height: CGFloat) -> Self {
+      let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.heightAnchor.constraint(lessThanOrEqualToConstant: height).isActive = true
     return self
   }
 
