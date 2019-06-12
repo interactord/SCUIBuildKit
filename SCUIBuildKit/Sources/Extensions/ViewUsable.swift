@@ -9,6 +9,7 @@ public protocol ViewUsable: Builder {
   func setAlpha(_ opacity: CGFloat) -> Self
   func setTag(_ tag: Int) -> Self
   func setTintColor(_ tintColor: UIColor) -> Self
+  func setTransform(_ transform: CGAffineTransform) -> Self
 }
 
 extension ViewUsable {
@@ -28,6 +29,12 @@ extension ViewUsable {
   public func setTintColor(_ tintColor: UIColor) -> Self {
     let targetView = isUIViewType(self.targetView)
     targetView.tintColor = tintColor
+    return self
+  }
+
+  public func setTransform(_ transform: CGAffineTransform) -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.transform = transform
     return self
   }
 }
