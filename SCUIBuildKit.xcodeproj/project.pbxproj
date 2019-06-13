@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29454A9622B28FC00002F2A6 /* UIControlUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29454A9522B28FC00002F2A6 /* UIControlUsable.swift */; };
 		2947139822AFF18300ACE8A4 /* SliderBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947139722AFF18300ACE8A4 /* SliderBuilder.swift */; };
 		294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */; };
 		298470372281A2190021FDD5 /* BackgroundColorableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29454A9522B28FC00002F2A6 /* UIControlUsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlUsable.swift; sourceTree = "<group>"; };
 		2947139722AFF18300ACE8A4 /* SliderBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderBuilder.swift; sourceTree = "<group>"; };
 		294824062289FA7A003422B3 /* ActivityIndicatorBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorBuilder.swift; sourceTree = "<group>"; };
 		299089A92280C5A40018C2F8 /* SCUIBuildKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCUIBuildKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 				299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */,
 				F426E783759536F406FE5B34 /* BackgroundColorable.swift */,
 				F426E3C295CE631AAA40FE76 /* ViewUsable.swift */,
+				29454A9522B28FC00002F2A6 /* UIControlUsable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */,
 				299089D02280C6B50018C2F8 /* Builder.swift in Sources */,
 				F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */,
+				29454A9622B28FC00002F2A6 /* UIControlUsable.swift in Sources */,
 				F426E0D0CC1EFE3F67CD83F8 /* CALayerUsable.swift in Sources */,
 				F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */,
 				F426EAF7C2776E02A5CBFD01 /* BackgroundColorable.swift in Sources */,

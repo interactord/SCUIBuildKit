@@ -5,7 +5,7 @@
 
 import UIKit
 
-public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, ConstraintUsable, ViewUsable {
+public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, ConstraintUsable, ViewUsable, UIControllUsable {
   public var targetView: UIButton
 
   public init(type: UIButton.ButtonType? = nil) {
@@ -46,11 +46,6 @@ public struct ButtonBuilder: Builder, CALayerUsable, BackgroundColorable, Constr
     targetView.translatesAutoresizingMaskIntoConstraints = false
     targetView.sizeToFit()
     targetView.widthAnchor.constraint(equalToConstant: targetView.frame.width).isActive = true
-    return self
-  }
-
-  public func setAddTarget(_ target: Any?, selector: Selector, event: UIControl.Event) -> ButtonBuilder {
-    targetView.addTarget(target, action: selector, for: event)
     return self
   }
 

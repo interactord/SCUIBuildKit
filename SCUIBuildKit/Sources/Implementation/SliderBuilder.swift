@@ -8,7 +8,7 @@
 
 import UIKit
 
-public struct SliderBuider: Builder, ConstraintUsable, ViewUsable {
+public struct SliderBuider: Builder, ConstraintUsable, ViewUsable, UIControllUsable {
 
   public var targetView: UISlider
 

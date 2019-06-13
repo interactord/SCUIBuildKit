@@ -6,21 +6,28 @@
 import UIKit
 
 public protocol Builder {
-	associatedtype ViewType
-	var targetView: ViewType { get }
+  associatedtype ViewType
+  var targetView: ViewType { get }
 
-	func build() -> ViewType
+  func build() -> ViewType
 }
 
 extension Builder {
   public func build() -> ViewType {
-		return targetView
-	}
+    return targetView
+  }
 
-	func isUIViewType(_ targetView: ViewType) -> UIView {
-		guard let targetView = targetView as? UIView else {
-			fatalError("targetView is not same UIView")
-		}
-		return targetView
-	}
+  func isUIViewType(_ targetView: ViewType) -> UIView {
+    guard let targetView = targetView as? UIView else {
+      fatalError("targetView is not same UIView")
+    }
+    return targetView
+  }
+
+  func isUIControllType(_ targetView: ViewType) -> UIControl {
+    guard let targetView = targetView as? UIControl else {
+      fatalError("targetView is not same UIControll")
+    }
+    return targetView
+  }
 }
