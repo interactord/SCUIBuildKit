@@ -79,4 +79,11 @@ public extension ConstraintUsable {
     targetView.setContentHuggingPriority(priority, for: axis)
     return self
   }
+
+  func setSameWidthAndHeightAnchor() -> Self {
+    let targetView = isUIViewType(self.targetView)
+    targetView.translatesAutoresizingMaskIntoConstraints = false
+    targetView.heightAnchor.constraint(equalTo: targetView.widthAnchor).isActive = true
+    return self
+  }
 }
