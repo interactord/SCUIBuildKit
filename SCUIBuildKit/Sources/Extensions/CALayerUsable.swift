@@ -21,6 +21,7 @@ extension CALayerUsable {
 	public func setCornerRadius(_ radius: CGFloat) -> Self {
 		let targetView = isUIViewType(self.targetView)
     targetView.layer.cornerRadius = radius
+    targetView.layer.masksToBounds = true
     return self
 	}
 
