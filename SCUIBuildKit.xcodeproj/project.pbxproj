@@ -20,6 +20,8 @@
 		299089D62280C6B50018C2F8 /* UIImage+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */; };
 		299089D92280C7100018C2F8 /* LabelBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089C92280C6B40018C2F8 /* LabelBuilderSpec.swift */; };
 		299089DC2280C7550018C2F8 /* ImageViewBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */; };
+		29A5D75922CBD83800FF56C1 /* ExpandedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5D75822CBD83800FF56C1 /* ExpandedLabelView.swift */; };
+		29A5D75B22CBD8BC00FF56C1 /* ExpandedLabelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5D75A22CBD8BC00FF56C1 /* ExpandedLabelBuilder.swift */; };
 		F426E02C5E6CDB7C3C94A290 /* CALayerUsableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E57034560C17F44EB667 /* CALayerUsableSpec.swift */; };
 		F426E0424553D8140A22B119 /* ButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */; };
 		F426E09898C6B7D700BDBB20 /* ViewUsableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E2F84FCD90B72BFD586A /* ViewUsableMock.swift */; };
@@ -64,6 +66,8 @@
 		299089CB2280C6B40018C2F8 /* LabelBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelBuilder.swift; sourceTree = "<group>"; };
 		299089CD2280C6B50018C2F8 /* UIImage+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UIColor.swift"; sourceTree = "<group>"; };
 		299089DA2280C7530018C2F8 /* ImageViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderSpec.swift; sourceTree = "<group>"; };
+		29A5D75822CBD83800FF56C1 /* ExpandedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedLabelView.swift; sourceTree = "<group>"; };
+		29A5D75A22CBD8BC00FF56C1 /* ExpandedLabelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedLabelBuilder.swift; sourceTree = "<group>"; };
 		F426E086B561600AF34FBCF2 /* ConstraintUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintUsable.swift; sourceTree = "<group>"; };
 		F426E16FDE8E390469D35839 /* BackgroundColorableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorableSpec.swift; sourceTree = "<group>"; };
 		F426E19A54F011A35E6F2AC9 /* ActivityIndicatorViewBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewBuilderSpec.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		299089C32280C69E0018C2F8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				29A5D75722CBD82D00FF56C1 /* ExpendedView */,
 				299089C52280C6B40018C2F8 /* Builder.swift */,
 				299089CC2280C6B50018C2F8 /* Extensions */,
 				299089C72280C6B40018C2F8 /* Implementation */,
@@ -184,6 +189,7 @@
 				F426EA10549D9F9C7EBEBED2 /* ButtonBuilder.swift */,
 				299089CA2280C6B40018C2F8 /* ImageViewBuilder.swift */,
 				299089CB2280C6B40018C2F8 /* LabelBuilder.swift */,
+				29A5D75A22CBD8BC00FF56C1 /* ExpandedLabelBuilder.swift */,
 				F426EFE3190A3E9E39E224E2 /* StackViewBuilder.swift */,
 				F426E8C262498E6A158788C4 /* ViewBuilder.swift */,
 				2947139722AFF18300ACE8A4 /* SliderBuilder.swift */,
@@ -202,6 +208,14 @@
 				29454A9522B28FC00002F2A6 /* UIControlUsable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		29A5D75722CBD82D00FF56C1 /* ExpendedView */ = {
+			isa = PBXGroup;
+			children = (
+				29A5D75822CBD83800FF56C1 /* ExpandedLabelView.swift */,
+			);
+			path = ExpendedView;
 			sourceTree = "<group>";
 		};
 		F426E1C81B58CDF179650F90 /* Mock */ = {
@@ -325,9 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				299089D62280C6B50018C2F8 /* UIImage+UIColor.swift in Sources */,
+				29A5D75922CBD83800FF56C1 /* ExpandedLabelView.swift in Sources */,
 				299089D52280C6B50018C2F8 /* LabelBuilder.swift in Sources */,
 				2984703822822A900021FDD5 /* StackViewBuilder.swift in Sources */,
 				299089D42280C6B50018C2F8 /* ImageViewBuilder.swift in Sources */,
+				29A5D75B22CBD8BC00FF56C1 /* ExpandedLabelBuilder.swift in Sources */,
 				294824072289FA7A003422B3 /* ActivityIndicatorBuilder.swift in Sources */,
 				299089D02280C6B50018C2F8 /* Builder.swift in Sources */,
 				F426EADA3C85111FCDA423FE /* ConstraintUsable.swift in Sources */,
